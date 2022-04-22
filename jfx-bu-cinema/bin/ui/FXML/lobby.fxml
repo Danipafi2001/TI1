@@ -54,7 +54,7 @@
                   <Insets right="25.0" />
                </GridPane.margin>
             </Button>
-            <Button maxHeight="200.0" maxWidth="200.0" minHeight="200.0" minWidth="200.0" mnemonicParsing="false" onAction="#addAudience" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" GridPane.columnIndex="1">
+            <Button maxHeight="200.0" maxWidth="200.0" minHeight="200.0" minWidth="200.0" mnemonicParsing="false" onAction="#registerAudience" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" GridPane.columnIndex="1">
                <font>
                   <Font size="24.0" />
                </font>
@@ -86,7 +86,7 @@
                   <Insets right="25.0" />
                </GridPane.margin>
             </Button>
-            <Button cancelButton="true" layoutX="54.0" layoutY="210.0" mnemonicParsing="false" onAction="#addAudience" style="-fx-background-color: white;" text="Audience" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <Button cancelButton="true" layoutX="54.0" layoutY="210.0" mnemonicParsing="false" onAction="#registerAudience" style="-fx-background-color: white;" text="Audience" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <font>
                   <Font size="24.0" />
                </font>

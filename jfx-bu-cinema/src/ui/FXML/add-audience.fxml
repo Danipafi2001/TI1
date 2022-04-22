@@ -48,7 +48,7 @@
                   <Insets right="10.0" />
                </GridPane.margin>
             </Label>
-            <TextField fx:id="audienceID" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#idNumber" prefWidth="350.0" promptText="Type a id" GridPane.columnIndex="1">
+            <TextField fx:id="audienceID" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#onlyNumbers" prefWidth="350.0" promptText="Type a id" GridPane.columnIndex="1">
                <font>
                   <Font size="24.0" />
                </font>

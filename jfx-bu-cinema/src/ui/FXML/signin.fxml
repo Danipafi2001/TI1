@@ -29,7 +29,7 @@
                   <Insets left="100.0" right="10.0" top="50.0" />
                </HBox.margin>
             </Label>
-            <TextField fx:id="txtID" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#idNumber" promptText="Type a id">
+            <TextField fx:id="txtID" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#onlyNumbers" promptText="Type a id">
                <font>
                   <Font size="24.0" />
                </font>

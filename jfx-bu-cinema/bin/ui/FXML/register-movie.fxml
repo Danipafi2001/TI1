@@ -22,16 +22,8 @@
             <Font size="36.0" />
          </font>
          <VBox.margin>
-            <Insets bottom="6.0" top="50.0" />
+            <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
          </VBox.margin>
-      </Label>
-      <Label fx:id="alert" textFill="RED">
-         <VBox.margin>
-            <Insets bottom="18.0" />
-         </VBox.margin>
-         <font>
-            <Font size="24.0" />
-         </font>
       </Label>
       <GridPane>
          <columnConstraints>
@@ -168,7 +160,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button defaultButton="true" mnemonicParsing="false" onAction="#addMovie" style="-fx-background-color: blue;" text="Done" textFill="WHITE">
+            <Button defaultButton="true" mnemonicParsing="false" onAction="#saveFunction" style="-fx-background-color: blue;" text="Done" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>

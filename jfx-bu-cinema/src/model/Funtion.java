@@ -3,19 +3,19 @@ package model;
 import java.time.LocalDateTime;
 
 public class Funtion {
+
+	private int rows;
+	private boolean[][] occupancy;
 	private String name, cinema;
 	private LocalDateTime start, end;
-	private boolean[][] audience;
 	
 	public Funtion(String n, String c, LocalDateTime s, LocalDateTime e) {
 		name = n;
 		cinema = c;
 		start = s;
 		end = e;
-		if(c.equals("Small Room"))
-			audience = new boolean[4][7];
-		else
-			audience = new boolean[6][7];
+		rows = c.equals("Small Room") ? 4 : 6;
+		occupancy = new boolean[rows][7];
 	}
 
 	public String getName() {
@@ -33,12 +33,16 @@ public class Funtion {
 	public LocalDateTime getEnd() {
 		return end;
 	}
-
-	public boolean[][] getAudience() {
-		return audience;
+	
+	public int getRows() {
+		return rows;
 	}
 
-	public void setAudience(boolean[][] a) {
-		audience = a;
+	public boolean[][] getOccupancy() {
+		return occupancy;
+	}
+
+	public void setOccupancy(boolean[][] o) {
+		occupancy = o;
 	}
 }

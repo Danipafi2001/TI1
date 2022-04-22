@@ -4,13 +4,14 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 
 public class Cinema {
+	
 	private ArrayList<Funtion> funtions;
 
 	public Cinema() {
 		funtions = new ArrayList<>();
 	}
 
-	public boolean addFuntion(String n, String c, LocalDateTime s, LocalDateTime e) {
+	public boolean saveFuntion(String n, String c, LocalDateTime s, LocalDateTime e) {
 		boolean added = true;
 		for (int i = 0; i<funtions.size(); i++) {
 			Funtion temp = funtions.get(i);
@@ -22,7 +23,7 @@ public class Cinema {
 		return added;
 	}
 	
-	public boolean addPerson(String i, String n) {
+	public boolean savePerson(String i, String n) {
 		return false;
 	}
 	
@@ -34,19 +35,19 @@ public class Cinema {
 		return temp;
 	}
 	
-	public boolean[][] chairBussy(int index) {
-		return funtions.get(index).getAudience();
+	public boolean[][] occupiedChairs(int index) {
+		return funtions.get(index).getOccupancy();
 	}
 	
-	public void save(boolean[][] audience, int index) {
-		funtions.get(index).setAudience(audience);
+	public void saveOccupancy(boolean[][] audience, int index) {
+		funtions.get(index).setOccupancy(audience);
 	}
 
-	public int funtionsSize() {
+	public int numberFuntions() {
 		return funtions.size();
 	}
-
-	public ArrayList<Funtion> getFuntions() {
-		return funtions;
+	
+	public int getRows(int index) {
+		return funtions.get(index).getRows();
 	}
 }
